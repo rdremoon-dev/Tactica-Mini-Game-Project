@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Game Header -->
+  <header>
+    <div class="gameName">Tic Tac Toe</div>
+    <div id="timer">0:00</div>
+    <div class="headerBtn">
+      <button id="undoBtn"><span>Undo</span>
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+      <button id="reset"><span>Reset Game</span>
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Game Board -->
+  <main>
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+
+
+<div class="result-board hide">
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <button id="newGame">New Game</button>
+  </header>
+  <div class="board-container">
+  <div class="logo">
+    <img src="./img/tic-tac-toe log.png" alt="">
+  </div>
+  <div class="msg-container">
+    <p id="para"></p>
+    <h1 id="msg"></h1>
+  </div>
+  <button id="playAgain">Play Again</button>
+</div>
+</div>
+  </main>
+  <script src="app.js"></script>
+  <audio id="winSound" src="./audio/winsound.mp3"></audio>
+</body>
